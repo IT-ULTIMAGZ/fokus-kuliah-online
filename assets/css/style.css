@@ -1,0 +1,629 @@
+/*
+
+    Fonts
+    ---
+
+*/
+@font-face {
+    font-family: "National2";
+    src: url("../fonts/National 2 Regular.otf") format("opentype");
+    font-weight: normal;
+  }
+
+@font-face {
+  font-family: "National2";
+  src: url("../fonts/National 2 Medium.otf") format("opentype");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../fonts/National 2 XBold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../fonts/National 2 Narrow XBold Italic.otf") format("opentype");
+  font-weight: bolder;
+  font-style: italic;
+}
+ 
+
+img{
+    width: 200px;
+}
+
+/*
+
+    Elements
+    ---
+
+*/
+.hover-bawah-kampus{
+  position: relative;
+}
+
+.hover-bawah-kampus:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ed5da8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.hover-bawah-kampus:hover::before{
+  transform: scaleX(1);
+}
+
+.hover-bawah-dulu{
+  position: relative;
+}
+
+.hover-bawah-dulu:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #206d60;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.hover-bawah-dulu:hover::before{
+  transform: scaleX(1);
+}
+a{
+  font-family: "National2";
+  font-weight: normal;
+  font-size: 1vw;
+ 
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+
+.hover-bawah{
+  position: relative;
+}
+.hover-bawah:before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #efeae6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.hover-bawah:hover::before{
+  transform: scaleX(1);
+}
+#home
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #efeae6;
+}
+
+.imageholder img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.directory
+{
+  
+    width: 1000px;
+    height: 600px;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+/* Placeblock 1 */
+.directory>.placeblock .content
+{
+  position: absolute;
+  bottom: 70px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #4285e5;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 50px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #4285e5;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #efeae6;
+}
+
+/* Placeblock 2 */
+.directory>.placeblock-2 .content
+{
+  position: absolute;
+  bottom: 115px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #4285e5;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-2:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-2 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  /* ga pake left karena sempit tempetnya */
+  height: 15px;
+  background-color: #4285e5;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-2 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #f4d069;
+}
+
+/* Placeblock 3 */
+.directory>.placeblock-3 .content
+{
+  position: absolute;
+  bottom: 80px; /* atur atas dan bawah tooltip */
+  width: 150px; /* atur panjang tooltip */
+  height: 60px;
+  background-color: #efeae6;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-3:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-3 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 30px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #efeae6;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-3 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #226d62;
+}
+
+/* Placeblock 4 */
+.directory>.placeblock-4 .content
+{
+  position: absolute;
+  bottom: 76px; /* atur atas dan bawah tooltip */
+  width: 150px; /* atur panjang tooltip */
+  background-color: #4285e5;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-4:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-4 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 20px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #4285e5;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-4 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #efeae6;
+}
+
+/* Placeblock 4-1 */
+.directory>.placeblock-4-1 .content
+{
+  position: absolute;
+  bottom: 75px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #efeae6;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-4-1:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-4-1 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 30px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #efeae6;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-4-1 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #ed5da8;
+}
+
+/* Placeblock 5 */
+.directory>.placeblock-5 .content
+{
+  position: absolute;
+  bottom: 70px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #226d62;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-5:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-5 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 20px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #226d62;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-5 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #efeae6;
+}
+
+/* Placeblock 6 */
+.directory>.placeblock-6 .content
+{
+  position: absolute;
+  bottom: 80px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #226d62;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-6:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-6 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 30px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #226d62;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-6 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #efeae6;
+}
+
+/* Placeblock 7 */
+.directory>.placeblock-7 .content
+{
+  position: absolute;
+  bottom: 80px; /* atur atas dan bawah tooltip */
+  width: 140px; /* atur panjang tooltip */
+  background-color: #ed5da8;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.directory>.placeblock-7:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+.directory>.placeblock-7 .content:before
+{
+  content: '';
+  position: absolute;
+  width: 30px;
+  left: 55px; /*buat atur triangle di bawah*/
+  height: 15px;
+  background-color: #ed5da8;
+  bottom: -2px;
+  transform: rotate(45deg);
+}
+
+.directory>.placeblock-7 .content a
+{
+  margin: 0;
+  padding: 0;
+  color: #f4d069;
+}
+
+
+.directory>.placeblock
+{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-2
+{
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-3
+{
+    width: 100px;
+    height: 95px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-4
+{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-4-1
+{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-5
+{
+    width: 90px;
+    height: 78px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-6
+{
+    width: 95px;
+    height: 85px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.directory>.placeblock-7
+{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.directory .masadepan { left: 285px; top: 260px; }
+.directory .psikisfisik { left: 630px; top: 200px; }
+.directory .dulusekarang { left: 260px; top: 370px; }
+.directory .likaliku { left: 140px; top: 440px; }
+.directory .kampusindonesia { left: 515px; top: 320px; }
+.directory .chitchat { left: 760px; top: 260px; }
+.directory .kronologi { left: 550px; top: 410px; }
+.directory .mahasiswa { left: 750px; top: 440px; }
+
+
+html, body
+{
+    height: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+
+
+
+
+
+#credits
+{
+    background: #206d60;
+    height: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-family: "National2";
+}
+
+h6{
+    font-size: 14pt;
+    font-style: italic;
+    color: #f4d069;
+}
+
+p{
+    font-size: 12pt;
+  
+    color: #efeae6
+}
+
+h5{
+    font-size: 12pt;
+
+    color: #f4d069;
+}
+.row{
+    margin-top: 20px !important;
+    display: flex;
+    
+    
+}
+
+.row-logo{
+    padding-bottom: 25px;
+}
+
+#detect-mobile {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #4285e5;
+  z-index: 99;
+  font-family: "National2";
+}
+
+#warning-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  #detect-mobile {
+    display: block;
+  }
+}
+
+
+/*
+
+    Responsive
+    ---
+
+*/
+
+@media screen and (max-width: 1200px) {
+    .full-height { height: auto; }
+    #home { padding-bottom: 100px; }
+    .modal-dialog, .modal-content { height: auto; }
+    .slide-perbedaan { width: 400px; }
+    
+}
